@@ -7,6 +7,7 @@
 
 auto main() -> int
 {
-    std::cout << "Hello, Alicja\n";
+    std::cout << "Hello, World\n";
+    std::cout << "xxx";
     return 0;
 }
