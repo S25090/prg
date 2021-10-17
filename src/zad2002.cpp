@@ -5,18 +5,19 @@ auto ask_user_for_integer(std::string const prompt) -> int;
 
 auto main() -> int
 {
-	int liczba1,liczba2;
-
-	liczba1 = ask_user_for_integer("Wprowadz pierwsza liczbe: ");
+	int liczba1,liczba2,c;
+        liczba1 = ask_user_for_integer("Wprowadz pierwsza liczbe: ");
 	liczba2 = ask_user_for_integer("Wprowadz druga liczbe: ");
-	
-	for (int i=liczba1; i<liczba2; i++)
-	    std::cout << i << std::endl;
-	
+	c = ask_user_for_integer("Wprowadz trzecia liczbe: ");
 
+	if(liczba1 % c == 0 && liczba2 % c == 0)
+	{
+	  for(int i=liczba1; i<liczba2; i++)
+	  {
+		std::cout <<  i  << std::endl;
+	  }
+	}
 }
-
-
 
 
 
