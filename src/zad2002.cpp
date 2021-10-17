@@ -9,12 +9,18 @@ auto main() -> int
         liczba1 = ask_user_for_integer("Wprowadz pierwsza liczbe: ");
 	liczba2 = ask_user_for_integer("Wprowadz druga liczbe: ");
 	c = ask_user_for_integer("Wprowadz trzecia liczbe: ");
-
-	if(liczba1 % c == 0 && liczba2 % c == 0)
+	
+	while ( c == 0 )
 	{
-	  for(int i=liczba1; i<liczba2; i++)
+	    std::cout << "Podaj inna liczbe (niezerowa) " << std::endl;
+	    c = ask_user_for_integer("Wprowadz trzecia liczbe: ");
+	}
+
+        for(int i=liczba1; i<liczba2; i++)
+	{
 	  {
-		std::cout <<  i  << std::endl;
+              if (i % c == 0)
+       	         std::cout <<  i  << std::endl;
 	  }
 	}
 }
