@@ -18,7 +18,10 @@ auto main() -> int
 		{
 			cout << '*';
 		}
+
+		cout << endl;	
 	}
-	cout << endl;
+
+
 }
 
