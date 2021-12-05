@@ -1,0 +1,6 @@
+struct MojaStruktura
+{
+ 	void metoda();
+	
+};
+
